@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+
+$font-stack: "Cairo", sans-serif;
+
+$link: hsl(0, 0%, 21%);
+$link-hover: hsl(204, 71%, 39%);
+
+$read-more: hsl(204, 71%, 39%);
+$read-more-hover: hsl(348, 100%, 61%);
+
+body {
+  font: 100% $font-stack;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.link {
+  color: $link;
+  &:hover {
+    color: $link-hover;
+  }
+}
+.read-more {
+  color: $read-more;
+  &:hover {
+    color: $read-more-hover;
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

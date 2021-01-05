@@ -1,0 +1,125 @@
+{% import 'macros.html' as macros %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% if config.extra.favicon.webmanifest %}
+  <link href='{{ config.extra.favicon.webmanifest }}' rel="manifest" />
+  {% endif %}
+  {% if config.extra.favicon.safari_pinned_tab %}
+  <link color="#5bbad5" href='{{ config.extra.favicon.safari_pinned_tab }}' rel="mask-icon" />
+  {% endif %}
+  {% if config.extra.favicon.favicon_16x16 %}
+  <link href='{{ config.extra.favicon.favicon_16x16 }}' rel="icon" sizes="16x16" type="image/png" />
+  {% endif %}
+  {% if config.extra.favicon.favicon_32x32 %}
+  <link href='{{ config.extra.favicon.favicon_32x32 }}' rel="icon" sizes="32x32" type="image/png" />
+  {% endif %}
+  {% if config.extra.favicon.apple_touch_icon %}
+  <link href='{{ config.extra.favicon.apple_touch_icon }}' rel="apple-touch-icon" sizes="180x180" />
+  {% endif %}
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+  <link href='{{ get_url(path='site.css') }}' rel="stylesheet" />
+
+  {% block custom_css %}
+  {% endblock %}
+
+  <title>
+    {% block title %}
+    {{ config.title }}
+    {% endblock title %}
+  </title>
+
+  <script crossorigin="anonymous" src="https://kit.fontawesome.com/201b8d5e05.js"></script>
+
+</head>
+
+<body>
+  {% block navbar %}
+  <nav aria-label="section navigation" class="navbar is-light" role="navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item has-text-weight-bold" href="/">{{ config.title }}</a>
+        <a aria-expanded="false" aria-label="menu" class="navbar-burger burger" data-target="navMenu" role="button">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-end has-text-centered">
+          {% for item in config.extra.navbar_items %}
+          <a class="navbar-item" href='{{ item.url | replace(from='$BASE_URL', to=config.base_url) }}'>
+            {{ item.name }}
+          </a>
+          {% endfor %}
+          <a class="navbar-item" id="nav-search" title="Search" data-target="#search-modal">
+            <span class="icon">
+              <i class="fas fa-search"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  {% endblock %}
+
+  {% block header %}
+  {% endblock %}
+
+  {% block content %}
+  {% endblock %}
+
+  {% block search %}
+  <section class="modal" id="search-modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="field">
+        <p class="control has-icons-right">
+          <input class="input" id="search" placeholder="Search this website." type="search" />
+          <span class="icon is-small is-right">
+            <i class="fas fa-search"></i>
+          </span>
+        </p>
+      </div>
+      <div class="search-results">
+        <div class="search-results__items"></div>
+      </div>
+    </div>
+    <button aria-label="close" class="modal-close is-large"></button>
+  </section>
+  {% endblock %}
+
+
+  {% block pagination %}
+  {% endblock %}
+
+  {% block comment %}
+  {% endblock %}
+
+  {% block footbar %}
+  <footer class="footer py-1">
+    <div class="content has-text-centered">
+      <p>Written by Ahmed Elmaghallawy</p>
+      <p>
+        The website content is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+  </footer>
+  {% endblock %}
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js"></script>
+  <script src='{{ get_url(path='search_index.en.js') }}'></script>
+  <script src='{{ get_url(path='js/site.js') }}'></script>
+
+  {% block custom_js %}
+  {% endblock %}
+</body>
+
+</html>
