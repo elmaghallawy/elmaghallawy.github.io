@@ -60,12 +60,21 @@
 {% endmacro %}
 {% macro  page_publish_metadata(page) %}
   <span class="has-text-grey">
-     published on
+     Published on
     <span class="icon">
       <i class="far fa-calendar-alt"></i>
     </span>
     <time datetime='{{ page.date }}'>{{ page.date | date(format='%B %d, %Y') }}</time>
   </span>
+  {% if page.updated %}
+  <span class="has-text-grey">
+    ...Updated on
+   <span class="icon">
+     <i class="far fa-calendar-alt"></i>
+   </span>
+   <time datetime='{{ page.date }}'>{{ page.date | date(format='%B %d, %Y') }}</time>
+ </span>
+  {% endif %}
 {% endmacro %}
 
 {% macro render_categories(categories) %}
