@@ -1,7 +1,6 @@
 +++
-title = "Ahmed Elmaghallawy"
-description = "Electrical power engineering graduate and Tech enthusiast(🌐🔙🔚🦀JS)."
+title = "Posts"
+description = "Blog posts accumulated over the time."
+sort_by = "date"
+paginate_by = 10
 +++
-
-My **blog** is where I write and reflect from time to time.
-
