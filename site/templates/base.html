@@ -5,7 +5,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content={% if page.title %}"{{ page.title }}"{% elif section.title %}"{{ section.title }}"{% endif %}>
+  <meta name="author" content="Ahmed Elmaghallawy">
+  
+  <meta name="description" content=
+  {% if section.description %}"{{ section.description }}"
+  {% elif section.title %}"{{ section.title }}"
+  {% elif page.description %}"{{ page.description }}"
+  {% elif page.title %}"{{ page.title }}"
+  {% endif %}>
+
+
+  {% block meta %}
+  {% endblock %}
 
   {% if config.extra.favicon.webmanifest %}
   <link href='{{ config.extra.favicon.webmanifest }}' rel="manifest" />
