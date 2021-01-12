@@ -1,4 +1,18 @@
 {% extends 'base.html' %}
+
+{% block meta %}
+<meta property="og:title" content="{{ section.title }}" />
+<meta property="og:description" content="{{ section.description}}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ section.permalink }}" />
+<meta property="og:image" content="{{ config.extra.author.avatar }}" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="400" />
+<meta property="og:image:height" content="300" />
+<meta property="og:image:alt" content="" />
+
+{% endblock %}
+
 {% block content %}
 <section class="section">
   <div class="container">
