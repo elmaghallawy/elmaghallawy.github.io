@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector("#search").addEventListener("keyup", function () {
     search();
   });
-
+  /*
   document.querySelector("#dark-mode").addEventListener("click", function () {
     if (
       localStorage.getItem("theme") == null ||
@@ -229,4 +229,5 @@ document.addEventListener("DOMContentLoaded", function () {
         .setAttribute("title", "Switch to dark theme");
     }
   });
+  */
 });
