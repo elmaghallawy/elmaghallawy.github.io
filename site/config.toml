@@ -63,3 +63,5 @@ avatar = "/images/avatar.png"
 # Social links
 [extra.social]
 email = "elmaghallawy@protonmail.com"
+linkedin = "elmaghallawy"
+github = "elmaghallawy"

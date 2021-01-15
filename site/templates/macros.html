@@ -50,12 +50,13 @@
       </a>
     {% endif %}
     {% if social_config.email %}
-        <p class="icon is-medium">
-          <i class="fa fa-envelope mx-1"></i>
-          <span class="is-size-6">{{ social_config.email }}</span>
-        </p>
-     
+      <a class="link" href="mailto:{{ social_config.email }}" target="_blank">
+        <span class="icon is-medium">
+          <i class="fa fa-envelope"></i>
+        </span>
+      </a>
     {% endif %}
+    
   </p>
 {% endmacro %}
 {% macro  page_publish_metadata(page) %}

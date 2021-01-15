@@ -14,6 +14,19 @@
   {% elif page.title %}"{{ page.title }}"
   {% endif %}>
 
+  <meta property="og:title" content={% if page.title %}"{{ page.title }}"
+  {% elif section.title %}"{{ section.title }}"{% endif %} />
+  <meta property="og:description" content={% if page.description %}"{{ page.description }}"
+  {% elif section.description %}"{{ section.description }}"{% endif %} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={% if page.permalink %}"{{ page.permalink }}"
+  {% elif section.permalink %}"{{ section.permalink }}"{% endif %} />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:creator" content="@elmaghallawyy" />
+  <meta name="twitter:title" content={% if page.title %}"{{ page.title }}"
+  {% elif section.title %}"{{ section.title }}"{% endif %} />
+  <meta name="twitter:description" content={% if page.description %}"{{ page.description }}"
+  {% elif section.description %}"{{ section.description }}"{% endif %} />
 
   {% block meta %}
   {% endblock %}
