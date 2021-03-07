@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang=en prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Ahmed Elmaghallawy">
+  
+  <meta name="description" content=
+  "JavaScript is interpreted or compiled?"
+  >
+
+  <meta property="og:title" content="JavaScript is interpreted or compiled?"
+   />
+  <meta property="og:description" content= />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https:&#x2F;&#x2F;aradwann.github.io&#x2F;javascript-interpreted-or-compiled&#x2F;"
+   />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:creator" content="@elmaghallawyy" />
+  <meta name="twitter:title" content="JavaScript is interpreted or compiled?"
+   />
+  <meta name="twitter:description" content= />
+
+  
+  <meta name="keywords" content= JavaScript,compiled,interpreted,JIT >
+
+  
+
+  
+  <link href='&#x2F;icons&#x2F;site.webmanifest' rel="manifest" />
+  
+  
+  <link color="#5bbad5" href='&#x2F;icons&#x2F;safari-pinned-tab.svg' rel="mask-icon" />
+  
+  
+  <link href='&#x2F;icons&#x2F;favicon-16x16.png' rel="icon" sizes="16x16" type="image/png" />
+  
+  
+  <link href='&#x2F;icons&#x2F;favicon-32x32.png' rel="icon" sizes="32x32" type="image/png" />
+  
+  
+  <link href='&#x2F;icons&#x2F;apple-touch-icon.png' rel="apple-touch-icon" sizes="180x180" />
+  
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+  <link href='https:&#x2F;&#x2F;aradwann.github.io&#x2F;site.css' rel="stylesheet" />
+
+  
+  
+
+  <title>
+    
+  Blog | JavaScript is interpreted or compiled? 
+  
+  </title>
+
+  <script crossorigin="anonymous" src="https://kit.fontawesome.com/201b8d5e05.js"></script>
+
+</head>
+
+<body>
+  
+  <nav aria-label="section navigation" class="navbar is-light" role="navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item has-text-weight-bold" href="/">Blog</a>
+        <a aria-expanded="false" aria-label="menu" class="navbar-burger burger" data-target="navMenu" role="button">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-end has-text-centered">
+          
+          <a class="navbar-item" href='https:&#x2F;&#x2F;aradwann.github.io&#x2F;'>
+            Posts
+          </a>
+          
+          <a class="navbar-item" href='https:&#x2F;&#x2F;aradwann.github.io&#x2F;tags'>
+            Tags
+          </a>
+          
+          <a class="navbar-item" href='https:&#x2F;&#x2F;aradwann.github.io&#x2F;categories'>
+            Categories
+          </a>
+          
+          <a class="navbar-item" href='https:&#x2F;&#x2F;aradwann.github.io&#x2F;about'>
+            about
+          </a>
+          
+          <a class="navbar-item" id="nav-search" title="Search" data-target="#search-modal">
+            <span class="icon">
+              <i class="fas fa-search"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+
+  
+  
+
+  
+<section class="section pb-0">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8 is-offset-2">
+        <article>
+          <h1 class="title mt-0 mb-0">JavaScript is interpreted or compiled?</h1>
+          <h3 class="subtitle is-size-6 mt-1 mb-1">
+  <span class="has-text-grey">
+     Published on
+    <span class="icon">
+      <i class="far fa-calendar-alt"></i>
+    </span>
+    <time datetime='2021-01-14'>January 14, 2021</time>
+  </span>
+  
+</h3>
+          <div class="columns is-multiline is-gapless">
+          <div class="column is-4">
+             
+  <p>
+    <span class="has-text-black has-text-weight-normal">Categories:</span>
+    
+      <a class="link has-text-weight-light" href='https:&#x2F;&#x2F;aradwann.github.io&#x2F;categories&#x2F;javascript&#x2F;'>
+        <span class="icon is-small">
+          <i class="fas fa-folder fa-xs"></i>
+        </span>
+        JavaScript
+      </a>
+    
+  </p>
+ 
+          </div>
+          <div class="column is-8 has-text-right-desktop">
+             
+  <p>
+    <span class="has-text-black has-text-weight-normal">Tags:</span>
+    
+      <a class="link has-text-weight-light" href='https:&#x2F;&#x2F;aradwann.github.io&#x2F;tags&#x2F;javascript&#x2F;'>
+        <span class="icon is-small">
+          <i class="fas fa-tag fa-xs"></i>
+        </span>
+        JavaScript
+      </a>
+    
+      <a class="link has-text-weight-light" href='https:&#x2F;&#x2F;aradwann.github.io&#x2F;tags&#x2F;compiled&#x2F;'>
+        <span class="icon is-small">
+          <i class="fas fa-tag fa-xs"></i>
+        </span>
+        compiled
+      </a>
+    
+      <a class="link has-text-weight-light" href='https:&#x2F;&#x2F;aradwann.github.io&#x2F;tags&#x2F;interpreted&#x2F;'>
+        <span class="icon is-small">
+          <i class="fas fa-tag fa-xs"></i>
+        </span>
+        interpreted
+      </a>
+    
+      <a class="link has-text-weight-light" href='https:&#x2F;&#x2F;aradwann.github.io&#x2F;tags&#x2F;jit&#x2F;'>
+        <span class="icon is-small">
+          <i class="fas fa-tag fa-xs"></i>
+        </span>
+        JIT
+      </a>
+    
+  </p>
+ 
+          </div>
+
+          </div>
+          <div class="content has-text-justified">
+            <p>When I began learning to program, they told me there are two kinds of programming languages:</p>
+<ul>
+<li>Compiled Languages</li>
+<li>Interpreted Languages</li>
+</ul>
+<p><strong><em>but</em></strong>, no one told me about the grey area between them which includes just in time (JIT) compilation</p>
+<h3 id="interpreted-language">Interpreted Language</h3>
+<p>An interpreted language is executed line by line from top to down
+so, if there is an error in line 21 in the code/script running, the previous 20 lines have already run and, the program crashed at the 21.</p>
+<h3 id="ahead-of-time-aot-compiled-language">Ahead Of Time (AOT) Compiled Language</h3>
+<p>A compiled language is parsed then, compiled then, executed
+so, if there is an error in line 21 in the code, there is not code ran because the error was caught in the parsing stage (before the execution stage).</p>
+<img src="./interpreted-vs-compiled.svg"/>
+<h3 id="just-in-time-jit-compilation">Just In Time (JIT) compilation</h3>
+<h5 id="why-jit">Why JIT?</h5>
+<p>JIT compilation combines the advantages of both of ahead of time compilation and interpretation like interpretation flexibility and AOT compilation high performance.</p>
+<h5 id="how-is-it-working">How is it working?</h5>
+<p>A common implementation of JIT is that the source code is compiled to bytecode -bytecode is an intermediate representation- then bytecode is dynamically compiled to machine code, this improves the runtime performance but adds an overhead time for compilation which, is solved by caching thus, allows to cut the future compilation time since only a portion of the code is compiled instead of the whole codebase like ahead of time compilation.</p>
+<img src="./bytecode-JIT.svg"/>
+<p>Bytecode is not a machine code for specific computer architecture, so it's portable among many computer architectures.
+The JIT compiler reads the bytecode in many parts then, compile those parts to machine code then, cached to be reused in the future without having to compile it again thus, that the program can run faster, the code can be compiled when it's about to be executed that's why it's called 'just in time'.</p>
+<h5 id="how-is-it-different-from-interpretation">How is it different from interpretation?</h5>
+<p><strong>Interpretation</strong>: interpreters interpret bytecode with poor performance and some interpret the source code with lower performance.
+<strong>AOT compilation</strong>: statically compiled (native) code is compiled and outputting machine code on the disk before deployment.
+<strong>A dynamic compilation environment</strong> is the one where the compiler can be used during execution, much of the work of parsing and optimize the source code happens at the compile-time before deployment. Compilation from bytecode is much faster than compilation from the source, bytecode is compiled to machine code in memory directly and, JIT executes it. That process provides portability and many possible optimizations that can happen to squeeze better performance.</p>
+<h5 id="v8-javascript-engine">V8 JavaScript Engine</h5>
+<p>JavaScript is described as a JIT-compiled language, not interpreted, not complied, but in the grey area between them. there are many engines for JavaScript to do that but I will talk about the V8 engine from google.</p>
+<p>V8 parser parses the JS source code outputting abstract syntax tree, then Ignition (V8 interpreter) generates bytecode from the syntax tree which, then is optimized and turned into machine code using the Turbofan compiler, the machine code is re-optimized when needed during runtime based on monitoring and profiling</p>
+<img src="./V8.svg"/>
+
+          </div>
+          <div class="container has-text-centered">
+            
+  <p class="is-size-5">
+    Share:
+    <a class="link" data-sharer="facebook" data-url='https:&#x2F;&#x2F;aradwann.github.io&#x2F;javascript-interpreted-or-compiled&#x2F;' href="javascript:void(0);" title="Share on facebook">
+      <span class="icon">
+        <i class="fab fa-facebook-square"></i>
+      </span>
+    </a>
+    <a class="link" data-sharer="twitter" data-title='JavaScript is interpreted or compiled?' data-url='https:&#x2F;&#x2F;aradwann.github.io&#x2F;javascript-interpreted-or-compiled&#x2F;' href="javascript:void(0);" title="Share on twitter">
+      <span class="icon">
+        <i class="fab fa-twitter"></i>
+      </span>
+    </a>
+    <a class="link" data-sharer="linkedin" data-url='https:&#x2F;&#x2F;aradwann.github.io&#x2F;javascript-interpreted-or-compiled&#x2F;' href="javascript:void(0);" title="Share on linkedin">
+      <span class="icon">
+        <i class="fab fa-linkedin"></i>
+      </span>
+    </a>
+    <a class="link" data-sharer="reddit" data-url='https:&#x2F;&#x2F;aradwann.github.io&#x2F;javascript-interpreted-or-compiled&#x2F;' href="javascript:void(0);" title="Share on reddit">
+      <span class="icon">
+        <i class="fab fa-reddit"></i>
+      </span>
+    </a>
+    <a class="link" data-sharer="hackernews" data-title="JavaScript is interpreted or compiled?" data-url='https:&#x2F;&#x2F;aradwann.github.io&#x2F;javascript-interpreted-or-compiled&#x2F;' href="javascript:void(0);" title="Share on hackernews">
+      <span class="icon">
+        <i class="fab fa-hacker-news"></i>
+      </span>
+    </a>
+    <a class="link" data-sharer="whatsapp" data-title="JavaScript is interpreted or compiled?" data-url='https:&#x2F;&#x2F;aradwann.github.io&#x2F;javascript-interpreted-or-compiled&#x2F;' href="javascript:void(0);" title="Share on whatsapp">
+      <span class="icon">
+        <i class="fab fa-whatsapp-square"></i>
+      </span>
+    </a>
+  </p>
+
+          </div>
+        </article>
+      </div>
+      
+      <div class="column is-2 is-hidden-mobile">
+        <aside class="menu" style="position: fixed">
+          <p class="heading has-text-weight-bold">Contents</p>
+          <ul class="menu-list">
+            
+            <li>
+              <a class="is-size-7" href="https://aradwann.github.io/javascript-interpreted-or-compiled/#interpreted-language">
+                Interpreted Language
+              </a>
+              
+            </li>
+            
+            <li>
+              <a class="is-size-7" href="https://aradwann.github.io/javascript-interpreted-or-compiled/#ahead-of-time-aot-compiled-language">
+                Ahead Of Time (AOT) Compiled Language
+              </a>
+              
+            </li>
+            
+            <li>
+              <a class="is-size-7" href="https://aradwann.github.io/javascript-interpreted-or-compiled/#just-in-time-jit-compilation">
+                Just In Time (JIT) compilation
+              </a>
+              
+              <ul>
+                
+                <li>
+                  <a class="is-size-7" href="https://aradwann.github.io/javascript-interpreted-or-compiled/#why-jit">
+                    Why JIT?
+                  </a>
+                </li>
+                
+                <li>
+                  <a class="is-size-7" href="https://aradwann.github.io/javascript-interpreted-or-compiled/#how-is-it-working">
+                    How is it working?
+                  </a>
+                </li>
+                
+                <li>
+                  <a class="is-size-7" href="https://aradwann.github.io/javascript-interpreted-or-compiled/#how-is-it-different-from-interpretation">
+                    How is it different from interpretation?
+                  </a>
+                </li>
+                
+                <li>
+                  <a class="is-size-7" href="https://aradwann.github.io/javascript-interpreted-or-compiled/#v8-javascript-engine">
+                    V8 JavaScript Engine
+                  </a>
+                </li>
+                
+              </ul>
+              
+            </li>
+            
+          </ul>
+        </aside>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+  
+  <section class="modal" id="search-modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="field">
+        <p class="control has-icons-right">
+          <input class="input" id="search" placeholder="Search this website." type="search" />
+          <span class="icon is-small is-right">
+            <i class="fas fa-search"></i>
+          </span>
+        </p>
+      </div>
+      <div class="search-results">
+        <div class="search-results__items"></div>
+      </div>
+    </div>
+    <button aria-label="close" class="modal-close is-large"></button>
+  </section>
+  
+
+
+    
+
+    
+
+  
+  <footer class="footer py-1">
+    <div class="content has-text-centered">
+      <p>Written by Ahmed Elmaghallawy</p>
+      <p>
+        The website content is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+  </footer>
+  
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js"></script>
+  <script src='https:&#x2F;&#x2F;aradwann.github.io&#x2F;search_index.en.js'></script>
+  <script src='https:&#x2F;&#x2F;aradwann.github.io&#x2F;js&#x2F;site.js'></script>
+
+    
+</body>
+
+</html>
