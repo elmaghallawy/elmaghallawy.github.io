@@ -1,4 +1,4 @@
-# elmaghallawy.github.io
+# aradwann.github.io
 
 
 This is my blog, powered by [Zola](https://www.getzola.org/) static site engine and a *modified [DeepThought](https://github.com/RatanShreshtha/DeepThought) theme.
